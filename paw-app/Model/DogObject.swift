@@ -17,15 +17,21 @@ class DogObject {
     var name: String?
     var birthday: String?
     var breed: String?
-    var timestamp: TimeInterval?
+    var dateAccuired: String?
+    var microChip: String?
+    var weight: String?
+    var registration: String?
     
     
-    init(name: String, birthday: String, breed: String, timestamp: TimeInterval){
+    init(name: String, birthday: String, breed: String, dateAccuired: String, microChip: String, weight: String, registration: String){
         self.ref = nil
         self.name = name
         self.birthday = birthday
         self.breed = breed
-        self.timestamp = timestamp
+        self.dateAccuired = dateAccuired
+        self.microChip = microChip
+        self.weight = weight
+        self.registration = registration
     }
     
     init(snapshot: DataSnapshot) {
@@ -34,6 +40,10 @@ class DogObject {
         name = snapshotValue["name"] as? String ?? "Name not Found"
         birthday = snapshotValue["birthday"] as? String ?? "No Birthday Entered"
         breed = snapshotValue["breed"] as? String  ?? "breed not Found"
+        dateAccuired = snapshotValue["dateAccuired"] as? String ?? "no Date Accuired entered"
+        microChip = snapshotValue["microChiP"] as? String ?? "No Microchip entered"
+        weight = snapshotValue["weight"] as? String ?? "No weight entered"
+        registration = snapshotValue["registration"] as? String ?? "No registration"
         ref = snapshot.ref
     }
     func toAnyObject() -> Any {
@@ -41,7 +51,10 @@ class DogObject {
             "name": name ?? "Name not Found",
             "birthday": birthday ?? "No Birthday Entered",
             "breed": breed ?? "breed not Found",
-            "timestamp": timestamp!
+            "dateAccuired": dateAccuired ?? "no Date Accuired entered",
+            "microChiP": microChip ?? "No Microchip entered",
+            "weight": weight ?? "no weight entered",
+            "registration": registration ?? "No registration"
         ]
     }
 }
