@@ -81,6 +81,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVe-n8-I0v">
+                                <rect key="frame" x="164" y="505" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="addPetObj:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GbI-YN-Meh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -108,6 +116,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="breed" destination="upu-Or-ddF" id="Mw9-C6-WU4"/>
+                        <outlet property="petBirthday" destination="Dcq-tU-cxG" id="19S-yR-Hv4"/>
+                        <outlet property="petBreed" destination="upu-Or-ddF" id="MuI-Yq-L7f"/>
+                        <outlet property="petDateAccuired" destination="7RU-Ak-Lk3" id="wQm-yF-9p4"/>
+                        <outlet property="petMicroChipNum" destination="c0p-XI-b71" id="ekP-TV-eIl"/>
+                        <outlet property="petName" destination="fZd-Ew-BLG" id="Bcn-zC-GjX"/>
+                        <outlet property="petRegistration" destination="qlA-Dv-0lS" id="alS-gd-4Y2"/>
+                        <outlet property="petWeight" destination="RHg-a3-H3Z" id="FsW-Pu-shO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
