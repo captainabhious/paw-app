@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E6299BDEB01FF904520F05B /* Pods_paw_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6459D439B5B7A133F096EC57 /* Pods_paw_app.framework */; };
 		6A6A32BA208666CB008A3896 /* DogObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A32B9208666CB008A3896 /* DogObject.swift */; };
+		6ABF08E7208E9D1B004EC078 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6ABF08E6208E9D1B004EC078 /* GoogleService-Info.plist */; };
 		7D02C8F52063167A002F2F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02C8F42063167A002F2F91 /* AppDelegate.swift */; };
 		7D02C8F72063167A002F2F91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02C8F62063167A002F2F91 /* ViewController.swift */; };
 		7D02C8FA2063167A002F2F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D02C8F82063167A002F2F91 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		6459D439B5B7A133F096EC57 /* Pods_paw_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paw_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6A32B9208666CB008A3896 /* DogObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogObject.swift; sourceTree = "<group>"; };
+		6ABF08E6208E9D1B004EC078 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/GA/iosi-projects/project03-ga-mazon/project03-ga-mazon 4/GA-mazon/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7D02C8F12063167A002F2F91 /* paw-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "paw-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D02C8F42063167A002F2F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D02C8F62063167A002F2F91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				7D02C8FB2063167A002F2F91 /* Assets.xcassets */,
 				7D02C8FD2063167A002F2F91 /* LaunchScreen.storyboard */,
 				7D02C9002063167A002F2F91 /* Info.plist */,
+				6ABF08E6208E9D1B004EC078 /* GoogleService-Info.plist */,
 			);
 			path = "paw-app";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			files = (
 				7D02C8FF2063167A002F2F91 /* LaunchScreen.storyboard in Resources */,
 				7D02C8FC2063167A002F2F91 /* Assets.xcassets in Resources */,
+				6ABF08E7208E9D1B004EC078 /* GoogleService-Info.plist in Resources */,
 				7D02C8FA2063167A002F2F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
