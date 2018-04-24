@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--DogVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="paw_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DogVC" customModule="paw_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="addPetObj:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GbI-YN-Meh"/>
+                                    <action selector="addPetObj:" destination="BYZ-38-t0r" eventType="touchUpInside" id="re3-wQ-98V"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,14 +117,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="breed" destination="upu-Or-ddF" id="Mw9-C6-WU4"/>
-                        <outlet property="petBirthday" destination="Dcq-tU-cxG" id="19S-yR-Hv4"/>
-                        <outlet property="petBreed" destination="upu-Or-ddF" id="MuI-Yq-L7f"/>
-                        <outlet property="petDateAccuired" destination="7RU-Ak-Lk3" id="wQm-yF-9p4"/>
-                        <outlet property="petMicroChipNum" destination="c0p-XI-b71" id="ekP-TV-eIl"/>
-                        <outlet property="petName" destination="fZd-Ew-BLG" id="Bcn-zC-GjX"/>
-                        <outlet property="petRegistration" destination="qlA-Dv-0lS" id="alS-gd-4Y2"/>
-                        <outlet property="petWeight" destination="RHg-a3-H3Z" id="FsW-Pu-shO"/>
+                        <outlet property="petBirthday" destination="Dcq-tU-cxG" id="Y1g-dJ-mvE"/>
+                        <outlet property="petBreed" destination="upu-Or-ddF" id="DRq-Zw-C09"/>
+                        <outlet property="petDateAccuired" destination="7RU-Ak-Lk3" id="0C1-Bk-KSC"/>
+                        <outlet property="petMicroChipNum" destination="c0p-XI-b71" id="qjq-PB-RdX"/>
+                        <outlet property="petName" destination="fZd-Ew-BLG" id="RMX-Fu-cU3"/>
+                        <outlet property="petRegistration" destination="qlA-Dv-0lS" id="x3d-Bd-BNx"/>
+                        <outlet property="petWeight" destination="RHg-a3-H3Z" id="RXU-iy-Tfe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

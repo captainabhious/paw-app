@@ -10,8 +10,8 @@
 		1E6299BDEB01FF904520F05B /* Pods_paw_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6459D439B5B7A133F096EC57 /* Pods_paw_app.framework */; };
 		6A6A32BA208666CB008A3896 /* DogObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A32B9208666CB008A3896 /* DogObject.swift */; };
 		6ABF08E7208E9D1B004EC078 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6ABF08E6208E9D1B004EC078 /* GoogleService-Info.plist */; };
+		6ABF08E9208EE1DB004EC078 /* DogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABF08E8208EE1DB004EC078 /* DogVC.swift */; };
 		7D02C8F52063167A002F2F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02C8F42063167A002F2F91 /* AppDelegate.swift */; };
-		7D02C8F72063167A002F2F91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D02C8F62063167A002F2F91 /* ViewController.swift */; };
 		7D02C8FA2063167A002F2F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D02C8F82063167A002F2F91 /* Main.storyboard */; };
 		7D02C8FC2063167A002F2F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D02C8FB2063167A002F2F91 /* Assets.xcassets */; };
 		7D02C8FF2063167A002F2F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D02C8FD2063167A002F2F91 /* LaunchScreen.storyboard */; };
@@ -21,9 +21,9 @@
 		6459D439B5B7A133F096EC57 /* Pods_paw_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paw_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6A32B9208666CB008A3896 /* DogObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogObject.swift; sourceTree = "<group>"; };
 		6ABF08E6208E9D1B004EC078 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/GA/iosi-projects/project03-ga-mazon/project03-ga-mazon 4/GA-mazon/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6ABF08E8208EE1DB004EC078 /* DogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogVC.swift; sourceTree = "<group>"; };
 		7D02C8F12063167A002F2F91 /* paw-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "paw-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D02C8F42063167A002F2F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D02C8F62063167A002F2F91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D02C8F92063167A002F2F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D02C8FB2063167A002F2F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D02C8FE2063167A002F2F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				7D02C8F42063167A002F2F91 /* AppDelegate.swift */,
-				7D02C8F62063167A002F2F91 /* ViewController.swift */,
+				6ABF08E8208EE1DB004EC078 /* DogVC.swift */,
 				6A6A32B8208666AB008A3896 /* Model */,
 				7D02C8F82063167A002F2F91 /* Main.storyboard */,
 				7D02C8FB2063167A002F2F91 /* Assets.xcassets */,
@@ -236,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D02C8F72063167A002F2F91 /* ViewController.swift in Sources */,
+				6ABF08E9208EE1DB004EC078 /* DogVC.swift in Sources */,
 				6A6A32BA208666CB008A3896 /* DogObject.swift in Sources */,
 				7D02C8F52063167A002F2F91 /* AppDelegate.swift in Sources */,
 			);
