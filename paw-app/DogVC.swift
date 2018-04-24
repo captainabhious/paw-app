@@ -37,20 +37,38 @@ class DogVC: UIViewController {
     }
     
     @IBAction func addPetObj(_ sender: Any) {
-        var newPetName = petName.text
-        var newPetBirthday = petBirthday.text
-        var newPetBreed = petBreed.text
-        var newPetWeight = petWeight.text
-        var newPetRegistration = petRegistration.text
-        var newPetDateAccuired = petDateAccuired.text
-        var newPetMicrochipNum = petMicroChipNum.text
+        if petName.text == "" {
+            let alertName = UIAlertController(title: "Error", message: "Please add Pet Name", preferredStyle: .alert)
+            let oKAction = UIAlertAction(title: "Ok",
+                                             style: .default)
+            alertName.addAction(oKAction)
+            present(alertName, animated: true, completion: nil)
+
+        } else if petBreed.text == "" {
+            let alertBreed = UIAlertController(title: "Error", message: "Please add Pet Breed", preferredStyle: .alert)
+            let oKAction = UIAlertAction(title: "Ok",
+                                         style: .default)
+            alertBreed.addAction(oKAction)
+            present(alertBreed, animated: true, completion: nil)
+
+        } else {
+            let newPetName = petName.text
+            let newPetBirthday = petBirthday.text
+            let newPetBreed = petBreed.text
+            let newPetWeight = petWeight.text
+            let newPetRegistration = petRegistration.text
+            let newPetDateAccuired = petDateAccuired.text
+            let newPetMicrochipNum = petMicroChipNum.text
         
         
-        let newDog = DogObject(name: newPetName!, birthday: newPetBirthday!, breed: newPetBreed!, dateAccuired: newPetDateAccuired!, microChip: newPetMicrochipNum!, weight: newPetWeight!, registration: newPetRegistration!)
+        let weightFloat = Double(newPetWeight!)
+        
+        let newDog = DogObject(name: newPetName!, birthday: newPetBirthday!, breed: newPetBreed!, dateAccuired: newPetDateAccuired!, microChip: newPetMicrochipNum!, weight: weightFloat!, registration: newPetRegistration!)
         
         let formattedName = newPetName?.uppercased()
         self.ref.child(formattedName!).setValue(newDog.toAnyObject())
         emptyTextFields()
+        }
     }
     func emptyTextFields() {
         petName.text = ""
@@ -61,5 +79,16 @@ class DogVC: UIViewController {
         petDateAccuired.text = ""
         petMicroChipNum.text = ""
     }
+//    func handleNameError() {
+//        if petName.text == "" {
+//            let alert = UIAlertController(title: "Error", message: "Please add Pet Name", preferredStyle: .alert)
+//        }
+//    }
+//    func replaceBirthday(){
+//        var formattedbBirthday = petBirthday.text
+//        formattedbBirthday?.replacingOccurrences(of: "/", with: "")
+//    
+//    }
     
 }
+ 

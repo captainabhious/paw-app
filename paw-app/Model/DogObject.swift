@@ -14,16 +14,16 @@ class DogObject {
     
     let ref: DatabaseReference?
     
-    var name: String?
+    var name: String
     var birthday: String?
-    var breed: String?
+    var breed: String
     var dateAccuired: String?
     var microChip: String?
-    var weight: String?
+    var weight: Double?
     var registration: String?
     
     
-    init(name: String, birthday: String, breed: String, dateAccuired: String, microChip: String, weight: String, registration: String){
+    init(name: String, birthday: String, breed: String, dateAccuired: String, microChip: String, weight: Double, registration: String){
         self.ref = nil
         self.name = name
         self.birthday = birthday
@@ -42,10 +42,11 @@ class DogObject {
         breed = snapshotValue["breed"] as? String  ?? "breed not Found"
         dateAccuired = snapshotValue["dateAccuired"] as? String ?? "no Date Accuired entered"
         microChip = snapshotValue["microChiP"] as? String ?? "No Microchip entered"
-        weight = snapshotValue["weight"] as? String ?? "No weight entered"
+        weight = snapshotValue["weight"] as? Double ?? 0.0
         registration = snapshotValue["registration"] as? String ?? "No registration"
         ref = snapshot.ref
     }
+
     func toAnyObject() -> Any {
         return [
             "name": name ?? "Name not Found",
@@ -53,7 +54,7 @@ class DogObject {
             "breed": breed ?? "breed not Found",
             "dateAccuired": dateAccuired ?? "no Date Accuired entered",
             "microChiP": microChip ?? "No Microchip entered",
-            "weight": weight ?? "no weight entered",
+            "weight": weight ?? 0.0,
             "registration": registration ?? "No registration"
         ]
     }
